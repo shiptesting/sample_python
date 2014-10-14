@@ -24,3 +24,5 @@ after_success:
   - git push git@heroku.com:test-python-sample.git $BRANCH
   
 parallelized_test : true
+cache: true
+archive: true
