@@ -3,12 +3,12 @@ language: python
 #build_image: shippable/minv2:beta
 
 python:
-  - 2.6
-  - 2.7
-  - 3.2
+ # - 2.6
+  #- 2.7
+  #- 3.2
   - 3.3
   - 3.4
-  - pypy
+  #- pypy
 
 
 before_install:
@@ -39,3 +39,4 @@ branches:
 
 #cache: true 
 parallelized_test : true
+#pr test exclude
