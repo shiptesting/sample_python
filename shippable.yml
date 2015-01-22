@@ -3,12 +3,12 @@ language: python
 #build_image: shippable/minv2:beta
 
 python:
-  - 2.6
-  - 2.7
-  - 3.2
+ # - 2.6
+  #- 2.7
+  #- 3.2
   - 3.3
   - 3.4
-  - pypy
+  #- pypy
 
 
 before_install:
@@ -33,7 +33,10 @@ script:
   - echo $BUILD_NUMBER
 
 archive: true
-
+branches:
+  except:
+    - test/pr2/head
 
 #cache: true 
 parallelized_test : true
+#pr test exclude
