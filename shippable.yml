@@ -25,7 +25,9 @@ script:
   - echo $BUILD_NUMBER
 
 archive: true
-
+branches:
+  except:
+    - test_fail/001
 
 #cache: true 
 #parallelized_test : true
