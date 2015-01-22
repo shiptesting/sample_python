@@ -33,7 +33,9 @@ script:
   - echo $BUILD_NUMBER
 
 archive: true
-
+branches:
+  except:
+    - test/pr2/head
 
 #cache: true 
 parallelized_test : true
