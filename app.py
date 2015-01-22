@@ -1,6 +1,6 @@
 class App():
     def __init__(self):
-        self.var1 = 10 #15
+        self.var1 = 15
 
     def calculate(self):
         self.result = self.var1 * 4 + 2
