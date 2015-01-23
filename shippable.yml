@@ -26,6 +26,13 @@ script:
 
 archive: true
 
+notifications:
+  email:
+    recipients:
+      - vidya@shippable.com
+      - vidyac.raghav@gmail.com
+    on_success: change
+    on_failure: always
 
 #cache: true 
 parallelized_test : true
