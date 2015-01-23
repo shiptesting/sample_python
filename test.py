@@ -7,7 +7,7 @@ class TestSuite(unittest.TestCase):
         app = App()
         app.calculate()
         self.failIf(app.retrieve() != 61)
-   def test_from_ndarray():
+  # def test_from_ndarray():
 
 #"""See issue 7465."""
 #try:
