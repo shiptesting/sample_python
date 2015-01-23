@@ -1,13 +1,17 @@
 language: python
 
+env:
+ global:
+   - secure: H0P7ezxbD2W12Cmbw55BB0HdjGO5RjPtzGgPdrG+1avFzLy94zqT1CZMo0xGnd6reH2FDWC5j3cQFyThuGlrIu1XOt3o3jpOgMaNy2juU1DG+ygfMQlzzlqAnhYr9EcNF8jyGoVBsMIToYLJsVjfntTNG8HiHuba94yv2+hMNTy46ZHf+H0y7+XgLuotAg0GXOTPUnVweJsWnMFUtGj3CmddUQKFbXhREX3ZTalKzI+/VQIROBcCfqkAo/gDE0Y3hLyVi6RUhfWTZ1pH6sHIeMtZI+4rI9c7r9nf3r8ASA1xw5QDWq81u1BYHW88gMpTuj/B6D8i6klSVNbUPYKQ==
+   - secure: H0P7ezxbD2W12Cmbw55BB0HdjGO5RjPtzGgPdrG+1avFzLy94zqT1CZMo0xGnd6reH2FDWC5j3cQFyThuGeblrIu1XOt3o3jpOgMaNy2juU1DG+ygfMQlzzlqAnhYr9EcNF8jyGoVBsMIToYLJsVjfntTNG8HiHuba94yv2+hMNTy46ZHf+H0y7+XgLuotAg0GXOTPUnVweJsWnMFUtGj3CmddUQKFbXhREX3ZTalKzI+/VQIROBcCfqkAo/gDE0Y3hLyVi6RUhfWTZ1pH6sHIeMtZI+4rI9c7r9nf3r8ASA1xw5QDWq81u1BYHW88gMpTuj/B6D8i6klSVNbUPYKQ==
 
 python:
-  - 2.6
+#  - 2.6
   - 2.7
-  - 3.2
-  - 3.3
+ # - 3.2
+#  - 3.3
   - 3.4
-  - pypy
+ # - pypy
 
 install:
   - pip install -r requirements.txt
@@ -15,6 +19,7 @@ install:
 
 # Make folders for the reports
 before_script:
+  - echo $test
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
