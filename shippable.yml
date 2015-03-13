@@ -3,9 +3,6 @@ language: python
 #build_image: shippable/minv2:beta
 
 python:
-  - 2.6
-  - 2.7
-  - 3.2
   - 3.3
   - 3.4
  # - pypy
@@ -30,6 +27,7 @@ script:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - echo $BUILD_NUMBER 
   - echo $BUILD_URL
+  - exit 0
 
 archive: true
 notifications:
