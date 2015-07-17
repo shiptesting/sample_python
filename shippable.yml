@@ -44,6 +44,6 @@ notifications:
 parallelized_test : true
 #test
 branches:
-  only:
+  except:
     - master
    
