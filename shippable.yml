@@ -43,3 +43,7 @@ notifications:
 #cache: true 
 parallelized_test : true
 #test
+branches:
+  only:
+    - master
+   
