@@ -9,6 +9,7 @@ python:
 
 install:
    - pip install -r requirements.txt
+
    
 # Make folders for the reports
 before_script:
