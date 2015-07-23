@@ -2,7 +2,7 @@ language: python
 
 
 python:
-  - 3.2
+#  - 3.2
   - 3.3
   - 3.4
 
@@ -32,8 +32,3 @@ notifications:
 
 
 
-branches:
-  only:
-    - dev
-    - test-pr
-    - master
